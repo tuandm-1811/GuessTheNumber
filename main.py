@@ -7,11 +7,9 @@ def show_score():
     if not attempts_list:
         print('There is currently no high score,'
               'it\'s yours for the taking!')
-
     else:
         print(f'The current high score is: '
               f' {min(attempts_list)} attempts')
-
 def start_game():
     attempts = 0
 	# định nghĩa số lần thử
@@ -35,7 +33,6 @@ def start_game():
             if guess < 1 or guess > 10:
                 raise ValueError(
                     'Please guess a number within the given range!!!')
-
             attempts += 1
             attempts_list.append(attempts)
 
